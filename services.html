@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+<link href='http://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=McLaren' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+function initialize() {
+    var mapCanvas = document.getElementById('map-aside');
+    var mapOptions = {
+      center: new google.maps.LatLng(47.723217, -122.350660),
+      zoom: 8,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+  
+<title>Bark, Meow Grooming | Services</title>
+</head>
+<body>
+			<div id=wrapper>
+						<div id="header">
+								<h1 class="bark">BARK</h1>
+								<br>
+								<h1 class="meow">MEOW</h1>
+								<br>
+								<h2 class="lgrooming">Grooming</h2>
+								<br>
+							<h3 class="tl">A clean pet is a happy owner</h3>
+
+
+								<div class="sicons">
+								<ul>
+								<li><a href="http://facebook.com"><img src="./images/facebook.png" alt="facebook.com"></a></li>
+								<li><a href="http://instagram.com"><img src="./images/instagram.png" alt="instagram.com"></a></li>
+								<li><a href="http://yelp.com"><img src="./images/yelp.png" alt="yelp.com"></a></li>
+								<li><a href="http://youtube.com"><img src="./images/youtub.png" alt="youtube.com"></a></li>
+								</ul>
+								</div>
+						</div>
+
+						<div id="fixed-nav-bar">
+								<ul>
+									<li><a href="bmgrooming.html">Home</a></li>
+                                        <li><a href="services.html" class="current">Services</a></li>
+                                        <li><a href="groomers.html">Meet the Groomers</a></li>
+                                        <li><a href="faq.html">FAQ/Resources</a></li>
+                                        <li><a href="#">Contact</a></li>
+								  </ul>
+                                 
+						  </div>
+						  <div id="main">
+									<div id="op">
+                                    		<div id="theaders">
+                                            <h1>Services Offered</h1>
+                                            </div>
+											<section class="bath">
+													<article>
+														<figure>
+														<img src="images/sp1.jpg" alt="bath services">
+														</figure>
+  	                                 					<hgroup>
+														<h2>Bathing</h2>
+														<h3>Each bath includes</h3>
+														</hgroup>
+														<ul>
+														  <li>Lorem ipsum dolor sit amet</li>
+														  <li>Aliquam tincidunt mauris eu risus</li>
+														  <li>Vestibulum auctor dapibus neque</li>
+														</ul>
+                                                        <br>
+                                                        <p><strong>Pellentesque habitant morbi</strong>
+                                                       	<p>ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper 
+                                                        <em>Aenean ultricies mi vitae est.</em></p> 
+													</article>
+											</section>
+											  <section class="grooming">
+													 <article>
+														 <figure>
+														<img src="images/sp2.jpg" alt="grooming services">
+														</figure>
+														<hgroup>
+														<h2>Grooming</h2>
+														<h3>Touch Up Groom</h3>
+														</hgroup>
+														<p>In-between trims which can include face, feet, sanitary, feathers, belly, tail, and ears</p>
+														<br>
+														<h3>Complete Groom</h3>
+													   <p>Full haircut which includes the cut of your choice <strong>Includes the bath</strong></p>
+													 </article>
+											 </section>
+											 
+											 <section class="catg">
+													<article>
+														<figure>
+														<img src="images/sp4.jpg" alt="cat grooming">
+														</figure>
+														 <hgroup>
+														<h2>Cat Grooming</h2>
+														 <h3>Bath Includes</h3>
+														 </hgroup>
+														<ul>
+															<li>Lorem ipsum dolor</li>
+														  <li>Aliquam tincidunt </li>
+														  <li>Vestibulum auctor</li>
+														</ul>
+														 <br>
+													  <h3><i> We also offer</i></h3>
+													  <p>Pellentesque habitant morbi tristique senectus</p>
+                                                      <em>Aenean ultricies mi vitae est.</em>
+                                                      <p>Pellentesque habitant morbi tristique senectus</p>
+													 </article>
+											 </section>
+
+											<section class="addon">
+													<article>
+														<figure>
+														<img src="images/sp3.jpg" alt="add on services">
+														</figure>
+														<h2>Add on Services</h2>
+														<ul>
+														  <li>Lorem ipsum dolor</li>
+														  <li>Aliquam tincidunt </li>
+														  <li>Vestibulum auctor</li>
+														  <li>Vestibulum auctor</li>
+														  <li>Vestibulum auctor</li>
+														</ul>
+													 </article>
+											 </section>
+									 </div>
+								
+									<aside>                                
+										<div class="location">
+                                     <img src="images/cpic.jpg" alt="Contact Us">
+
+                                        <h2>Contact Us</h2>
+                                        <h3>206-340-2015</h3>
+                                        </div>
+                                        <hr>
+                                        <div class="mlocation">
+										<h3>24th and King Street 
+                                         <br>
+                                        in Shoreline
+                                             <br>
+                                             Hours:
+                                         <em>Monday-Saturday 8am-4pm</em></h3>
+                                        </div>
+                                      <hr>
+                                         <div id="map-aside"></div>
+                                      </aside>
+							</div>
+						 			<footer>
+                                      <p>Bark Meow Grooming</p>
+                                      <p>24th and King Street Shoreline, WA</p>
+                                      <p>206-340-2015</p>
+                                      <p><small>&copy Beth Griffith, Web 130</p></small>
+  
+  								</footer>
+							
+						  <!-- jQuery -->
+						  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+						  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+						  <!-- FlexSlider -->
+						  <script defer src="./js/jquery.flexslider.js"></script>
+
+						  <script type="text/javascript">
+							$(function(){
+							  SyntaxHighlighter.all();
+							});
+							$(window).load(function(){
+							  $('.flexslider').flexslider({
+								animation: "slide",
+								start: function(slider){
+								  $('body').removeClass('loading');
+								}
+							  });
+							});
+						  </script>
+
+			</div>
+
+</body>
+</html>
+	
