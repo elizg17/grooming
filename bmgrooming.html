@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+<link href='http://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=McLaren' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+function initialize() {
+    var mapCanvas = document.getElementById('map-canvas');
+    var mapOptions = {
+      center: new google.maps.LatLng(47.723217, -122.350660),
+      zoom: 8,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+  
+
+
+
+<title>Bark, Meow Grooming | Shoreline, WA</title>
+</head>
+
+
+<body>
+
+<div id=wrapper>
+<div id="header">
+<h1 class="bark">BARK</h1>
+<br>
+<h1 class="meow">MEOW</h1>
+<br>
+<h2 class="lgrooming">Grooming</h2>
+<br>
+<h3 class="tl">A clean pet is a happy owner</h3>
+
+
+
+<div class="sicons">
+<ul>
+<li><a href="http://facebook.com"><img src="./images/facebook.png" alt="facebook.com"></a></li>
+<li><a href="http://instagram.com"><img src="./images/instagram.png" alt="instagram.com"></a></li>
+<li><a href="http://yelp.com"><img src="./images/yelp.png" alt="yelp.com"></a></li>
+<li><a href="http://youtube.com"><img src="./images/youtub.png" alt="youtube.com"></a></li>
+</ul>
+</div>
+</div>
+
+<div id="fixed-nav-bar">
+<ul>
+<li><a href="bmgrooming.html" class="current">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="groomers.html">Meet the Groomers</a></li>
+<li><a href="faq.html">FAQ/Resources</a></li>
+<li><a href="contact.html">Contact</a></li>
+  </ul>
+  </div>
+
+<div id="content">
+ <div class="flexslider">
+  <ul class="slides">
+            <li>
+  	    	    <img src="./images/sphoto1.jpg" alt="dog getting groomed" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="./images/sphoto2.jpg" alt="childern with pets"/>
+  	    		</li>
+  	    		<li>
+  	    	    <img src="./images/sphoto3.jpg" alt="dog getting blow dryed" /></li>
+  	    		<li>
+  	    	    <img src="./images/sphoto4.jpg" alt="cat gettting groomed" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="./images/sphoto5.jpg" alt="dog with painted coat" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="./images/sphoto6.jpg"  alt="dog getting a bath"/>
+  	    		</li>
+          </ul>
+	</div>
+</div>
+	
+    
+    <div id="groomers">
+    
+    <div class="photos">
+    <a href="http://ideasbybg.com/web130/bmgrooming/services.html">
+		<img src="./images/mainpic1.jpg" alt="lady" />
+			<div class="content"> 
+		<div class="text_area">
+			Services
+		</div>
+		</a>
+	</div>
+</div>
+	
+	
+		<div class="photos">
+    <a href="http://ideasbybg.com/web130/bmgrooming/groomers.html">		
+			<img src="./images/mainpic2.jpg" alt="lady" />
+			<div class="content"> 
+		<div class="text_area">
+			Meet the Staff
+		</div>
+		</a>
+	</div>
+</div>
+	
+	
+	<div class="photos">
+	    <a href="http://ideasbybg.com/web130/bmgrooming/faq.html">		
+		<img src="./images/mainpic3.jpg" alt="lady" />
+		<div class="content"> 
+	<div class="text_area">
+  	FAQ/Resources
+	</div>
+	</a>
+</div>
+</div>
+  
+</div>
+  
+      <div id="info">
+       <div id="map-canvas"></div>
+    <div class="contactus">
+    <h2>Bark and Meow Grooming Location</h2>
+    <h3><i>A clean pet is a happy owner</i></h3>
+  	<h3>Call us at 206-340-2015</h3>  
+     <p><strong>We are located at 24th and King Street in Shoreline, WA</storng><p>
+     <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. 
+     Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. 
+     Curabitur massa. -Jim, Seattle, WA</blockquote></p>  
+    </div>
+    </div>
+  
+  <footer>
+      <p>Bark Meow Grooming</p>
+      <p>24th and King Street Shoreline, WA</p>
+      <p>206-340-2015</p>
+      <p><small>&copy Beth Griffith, Web 130</p></small>
+  
+  </footer>
+    
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="./js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+	
+
+
+</div>
+
+</body>
+</html>
