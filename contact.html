@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+<link href='http://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=McLaren' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/blitzer/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+
+<style>
+.error {color:red;}
+.hidden {display:none;}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+<script>
+$(document).ready(function() {
+	
+   $("#order-form").submit(validateForm); 
+});
+
+function validateForm() {
+	
+$ (".error") .hide();
+
+var validName = validateTextField ("#first-name", "#error-fname");
+var validLast = validateTextField ("#lname", "#error-lname");
+return validName && validLast; 
+
+	
+}
+
+function validateTextField (fieldId, errorId) {
+//if the value entered by the user is empty then show error msg and return false
+if ($(fieldId).val()=="")
+{	
+	$(errorId).show();
+	return false;
+}
+	return true; 
+}
+
+</script>
+
+
+
+<script>
+function initialize() {
+    var mapCanvas = document.getElementById('map-aside');
+    var mapOptions = {
+      center: new google.maps.LatLng(47.723217, -122.350660),
+      zoom: 8,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+  
+<title>Bark, Meow Grooming | Contact Us  </title>
+</head>
+<body>
+
+<div id=wrapper>
+						<div id="header">
+									<h1 class="bark">BARK</h1>
+							<br>
+							<h1 class="meow">MEOW</h1>
+							<br>
+							<h2 class="lgrooming">Grooming</h2>
+							<br>
+							<h3 class="tl">A clean pet is a happy owner</h3>
+
+
+								<div class="sicons">
+								<ul>
+								<li><a href="http://facebook.com"><img src="./images/facebook.png" alt="facebook.com"></a></li>
+								<li><a href="http://instagram.com"><img src="./images/instagram.png" alt="instagram.com"></a></li>
+								<li><a href="http://yelp.com"><img src="./images/yelp.png" alt="yelp.com"></a></li>
+								<li><a href="http://youtube.com"><img src="./images/youtub.png" alt="youtube.com"></a></li>
+								</ul>
+								</div>
+						</div>
+
+						<div id="fixed-nav-bar">
+									<ul>
+                                  <li><a href="bmgrooming.html">Home</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="groomers.html">Meet the Groomers</a></li>
+                                        <li><a href="faq.html">FAQ/Resources</a></li>
+                                         <li><a href="contact.html" class="current">Contact</a></li>
+                                                                          
+								  </ul>
+						  </div>
+                          
+                          
+                           <div id="main">
+									<div id="op">
+                                    
+                                   
+                                            
+                                            <fieldset>
+
+<legend>Contact Us</legend>
+
+<form id="order-form" action="success.html">
+<p>
+<label>First Name:</label>
+<input type="text" id="first-name" name="first-name">
+
+<span id="error-fname" class="hidden error">* blank</span>
+</p>
+<p>
+
+<label>Last Name</label>
+<input type="text" name="lname" id="lname">
+
+<span id="error-lname" class="hidden error">* blank</span>
+</p>
+<p>
+<span class="cd"> 
+<label>Pet</label>
+<input type="radio" name="pet" value="cat">Cat<br>
+<input type="radio" name="pet" value="dog">Dog
+</p>
+</span>
+
+<label>Message</label> 
+<textarea cols="50" rows="4" name="comment"></textarea>
+
+
+<button class="btn" type="submit" name="submit">Submit Order</button>
+</fieldset>
+</form>
+                                            
+                                            	 </div>         
+                           
+                           <aside>                                
+										<div class="location">
+                                     <img src="images/cpic.jpg" alt="Contact Us">
+
+                                        <h2>Contact Us</h2>
+                                        <h3>206-340-2015</h3>
+                                        </div>
+                                        <hr>
+                                        <div class="mlocation">
+										<h3>24th and King Street 
+                                         <br>
+                                        in Shoreline
+                                             <br>
+                                             Hours:
+                                         <em>Monday-Saturday 8am-4pm</em></h3>
+                                        </div>
+                                      <hr>
+                                         <div id="map-aside"></div>
+                                      </aside>
+
+                           
+                           
+                             <!--End of main div-->
+                         
+                           </div>    
+                           
+                           
+                         	<footer>
+                                      <p>Bark Meow Grooming</p>
+                                      <p>24th and King Street Shoreline, WA</p>
+                                      <p>206-340-2015</p>
+                                      <p><small>&copy Beth Griffith, Web 130</p></small>
+  								</footer>
+							
+			</div>
+            
+            
+          </body>
+</html>  
